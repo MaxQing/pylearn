@@ -1,5 +1,5 @@
-def is_odd(x):
-    return x % 2 == 0
+def my_power(x):
+    return x * x
 
 
-print(list(filter(is_odd, list(range(10)))))
+print(list(map(my_power, list(range(10)))))
