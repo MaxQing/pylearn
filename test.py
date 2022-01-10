@@ -1,11 +1,2 @@
-def closure():
-    fs = []
-    for i in range(1, 4):
-        def f():
-            return i * i
-        fs.append(f)
-    return fs
-
-
-f1, f2, f3 = closure()
-print(f1())
+L = list(filter(lambda n : n % 2 == 1, range(1, 21)))
+print(L)
