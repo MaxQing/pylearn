@@ -1,2 +1,11 @@
-temp_list = [22, 11, -33, -1, 18]
-print(list(sorted(temp_list, key=abs)))
+def lazy_sum(*args):
+    def sum():
+        ax = 0
+        for n in args:
+            ax = ax + n
+        return ax
+    return sum
+
+
+f = lazy_sum(1, 2, 3, 4, 5, 6)
+print(f())
